@@ -13,6 +13,7 @@ body {
     color: white;
     font-family: "Poppins", serif;
     overflow-x: hidden; /* Prevent horizontal scroll */
+    padding-top: 5rem; /* Add padding to prevent content from being hidden by fixed navbar */
 }
 
 nav {
@@ -22,6 +23,10 @@ nav {
     height: 5rem; /* Use rem for height */
     background-color: rgb(18, 18, 70);
     padding: 0 1rem; /* Add some padding */
+    position: fixed; /* Make navbar static */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other content */
 }
 
 nav .left {
