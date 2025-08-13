@@ -1,191 +1,227 @@
+html {
+    font-size: 16px; /* Base font size for rem units */
+}
+
 * {
-            margin: 0;
-            padding: 0;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: "Poppins", serif;
-        }
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 70);
-        }
-        nav ul{
-            display: flex;
-            justify-content:center ;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-        nav ul li a:hover{
-           color: rgb(125, 125, 217);
-           font-size: 1.2rem;
-        }
-        main hr{
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-        .left{
-            font-size: 1.5rem;
-        }
-        .firstsection{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
-        }
-        .firstsection > div{
-            width: 35%;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem; /* Use rem for height */
+    background-color: rgb(18, 18, 70);
+    padding: 0 1rem; /* Add some padding */
+}
 
-        }
-        .leftsection{
-            font-size: 2rem;
-        }
-        #img1{
-            width: 80%;
-            margin: 50px 0;
-            border-radius: 50%;
-        }
-        .purple{
-            color: rgb(188, 135, 238);
-        }
-        #element{
-            color: rgb(188, 135, 238);
-        }
-        .secondsection, .thirdsection, .fourthsection, .fifthsection, .sixthsection {
-            max-width: 80vw;
-            margin: auto;
-            padding: 40px 0;
-        }
-        .secondsection h1, .thirdsection h1, .fourthsection h1, .fifthsection h1, .sixthsection h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .secondsection p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            text-align: center;
-        }
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .skill-bar {
-            width: 45%;
-            margin-bottom: 20px;
-        }
-        .skill-name {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
-        .skill-level-container {
-            width: 100%;
-            background-color: #ddd;
-            border-radius: 5px;
-        }
-        .skill-level {
-            height: 10px;
-            background-color: #9c97f1;
-            border-radius: 5px;
-            width: 0;
-            transition: width 2s ease-in-out;
-        }
-        .services-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .service-box {
-            width: 30%;
-            background-color: rgb(18, 18, 70);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .service-box h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        .projects-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .project-card {
-            width: 30%;
-            background-color: rgb(18, 18, 70);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .project-card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        #contact-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        #contact-form input, #contact-form textarea {
-            width: 50%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-        #contact-form button {
-            padding: 10px 20px;
-            background-color: #9c97f1;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        footer {
-            background-color: rgb(18, 18, 70);
-            padding: 20px 0;
-            text-align: center;
-        }
-        .social-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .social-links li {
-            margin: 0 10px;
-        }
-        .social-links a {
-            color: white;
-            text-decoration: none;
-        }
+nav .left {
+    font-size: 1.5rem;
+}
+
+nav .right ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav .right ul li {
+    margin: 0 1.5rem; /* Use rem for margin */
+}
+
+nav .right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem; /* Use rem for font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+nav .right ul li a:hover {
+    color: rgb(125, 125, 217);
+    font-size: 1.2rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 0.075rem; /* Use rem for height */
+    margin: 2.5rem 5rem; /* Use rem for margin */
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0; /* Use rem for margin */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.firstsection > div {
+    width: 45%; /* Adjust width for better responsiveness */
+    min-width: 300px; /* Minimum width to prevent content from becoming too small */
+    padding: 1rem;
+}
+
+.leftsection {
+    font-size: 2.5rem; /* Use rem for font size */
+}
+
+#img1 {
+    width: 80%;
+    max-width: 300px; /* Max width for image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 2rem 0; /* Use rem for margin */
+    border-radius: 50%;
+    display: block; /* Remove extra space below image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.purple {
+    color: rgb(188, 135, 238);
+}
+
+#element {
+    color: rgb(188, 135, 238);
+}
+
+.secondsection, .thirdsection, .fourthsection, .fifthsection, .sixthsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 2.5rem 0; /* Use rem for padding */
+}
+
+.secondsection h1, .thirdsection h1, .fourthsection h1, .fifthsection h1, .sixthsection h1 {
+    font-size: 2.5rem; /* Use rem for font size */
+    margin-bottom: 1.25rem; /* Use rem for margin */
+    text-align: center;
+}
+
+.secondsection p {
+    font-size: 1.1rem; /* Use rem for font size */
+    line-height: 1.6;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 1.25rem; /* Gap between skill bars */
+}
+
+.skill-bar {
+    width: 45%; /* Adjust width for better responsiveness */
+    min-width: 280px; /* Minimum width for skill bar */
+    margin-bottom: 1.25rem; /* Use rem for margin */
+}
+
+.skill-name {
+    font-size: 1.2rem; /* Use rem for font size */
+    margin-bottom: 0.5rem; /* Use rem for margin */
+}
+
+.skill-level-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 0.3125rem; /* Use rem for border-radius */
+}
+
+.skill-level {
+    height: 0.625rem; /* Use rem for height */
+    background-color: #9c97f1;
+    border-radius: 0.3125rem; /* Use rem for border-radius */
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.services-container, .projects-container {
+    display: flex;
+    justify-content: center; /* Center items */
+    flex-wrap: wrap;
+    gap: 1.25rem; /* Gap between service/project boxes */
+}
+
+.service-box, .project-card {
+    width: 30%; /* Adjust width for better responsiveness */
+    min-width: 280px; /* Minimum width for boxes */
+    background-color: rgb(18, 18, 70);
+    padding: 1.25rem; /* Use rem for padding */
+    border-radius: 0.625rem; /* Use rem for border-radius */
+    text-align: center;
+    margin-bottom: 1.25rem; /* Use rem for margin */
+}
+
+.service-box h2, .project-card h2 {
+    font-size: 1.5rem; /* Use rem for font size */
+    margin-bottom: 0.625rem; /* Use rem for margin */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 50%;
+    max-width: 500px; /* Max width for form inputs */
+    padding: 0.625rem; /* Use rem for padding */
+    margin-bottom: 0.625rem; /* Use rem for margin */
+    border-radius: 0.3125rem; /* Use rem for border-radius */
+    border: none;
+}
+
+#contact-form button {
+    padding: 0.625rem 1.25rem; /* Use rem for padding */
+    background-color: #9c97f1;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; /* Use rem for border-radius */
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: rgb(18, 18, 70);
+    padding: 1.25rem 0; /* Use rem for padding */
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.625rem; /* Use rem for margin */
+}
+
+.social-links li {
+    margin: 0 0.625rem; /* Use rem for margin */
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
 .contact-details {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* Use rem for margin */
 }
 
 .contact-details p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem; /* Use rem for font size */
+    margin-bottom: 0.625rem; /* Use rem for margin */
 }
 
 .contact-details a {
@@ -195,31 +231,75 @@
 
 .map-container {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* Use rem for margin */
 }
 
 .map-container iframe {
-    width: 80%;
-    height: 450px;
-    border-radius: 10px;
+    width: 100%; /* Make iframe responsive */
+    max-width: 800px; /* Max width for map */
+    height: 450px; /* Keep a fixed height or adjust with aspect ratio */
+    border-radius: 0.625rem; /* Use rem for border-radius */
+    display: block;
+    margin: 0 auto;
 }
 
-/* General responsiveness for smaller screens */
-@media (max-width: 768px) {
+/* Media Queries */
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px; /* Slightly smaller base font size */
+    }
+
     nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
+        flex-direction: row; /* Keep nav items in a row */
+        justify-content: space-between; /* Space out items */
+        padding: 1rem;
     }
 
-    nav ul {
-        margin-top: 10px;
+    nav .right {
+        display: none; /* Hide navigation by default on smaller screens */
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        background-color: rgb(18, 18, 70);
+        position: absolute;
+        top: 5rem; /* Below the header */
+        left: 0;
+        z-index: 1000;
+        padding-bottom: 1rem;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    nav .right.open {
+        display: flex; /* Show navigation when open */
+    }
+
+    nav .right ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    nav .right ul li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show hamburger menu */
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        z-index: 1001; /* Ensure it's above the menu */
+    }
+
+    .menu-toggle .bar {
+        width: 100%;
+        height: 0.2rem;
+        background-color: white;
+        border-radius: 0.1rem;
+        transition: all 0.3s ease;
     }
 
     .firstsection {
@@ -229,20 +309,21 @@
 
     .firstsection > div {
         width: 90%;
+        min-width: unset; /* Remove min-width for smaller screens */
     }
 
     .leftsection {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     #img1 {
-        width: 60%;
-        margin: 20px 0;
+        width: 70%;
+        max-width: 250px;
     }
 
     .secondsection, .thirdsection, .fourthsection, .fifthsection, .sixthsection {
         max-width: 90vw;
-        padding: 20px 0;
+        padding: 1.5rem 0;
     }
 
     .secondsection h1, .thirdsection h1, .fourthsection h1, .fifthsection h1, .sixthsection h1 {
@@ -260,27 +341,35 @@
 
     .skill-bar, .service-box, .project-card {
         width: 90%;
-        margin-bottom: 20px;
+        min-width: unset; /* Remove min-width for smaller screens */
     }
 
-    .map-container iframe {
-        width: 90%;
-        height: 300px;
+    #contact-form input, #contact-form textarea {
+        width: 80%;
     }
 }
 
-/* Further adjustments for very small screens */
-@media (max-width: 480px) {
-    .left {
+/* Mobile devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Even smaller base font size */
+    }
+
+    nav .left {
         font-size: 1.2rem;
     }
 
-    nav ul li a {
+    nav .right ul li a {
         font-size: 1rem;
     }
 
     .leftsection {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    #img1 {
+        width: 80%;
+        max-width: 200px;
     }
 
     .secondsection h1, .thirdsection h1, .fourthsection h1, .fifthsection h1, .sixthsection h1 {
@@ -289,5 +378,44 @@
 
     .service-box h2, .project-card h2 {
         font-size: 1.3rem;
+    }
+
+    main hr {
+        margin: 2rem 2rem;
+    }
+}
+
+/* Very small mobile devices */
+@media (max-width: 480px) {
+    html {
+        font-size: 13px; /* Smallest base font size */
+    }
+
+    nav .left {
+        font-size: 1rem;
+    }
+
+    nav .right ul li {
+        margin: 0.3rem 0.5rem;
+    }
+
+    .leftsection {
+        font-size: 1.5rem;
+    }
+
+    .secondsection h1, .thirdsection h1, .fourthsection h1, .fifthsection h1, .sixthsection h1 {
+        font-size: 1.5rem;
+    }
+
+    .service-box h2, .project-card h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-details p {
+        font-size: 1rem;
+    }
+
+    .map-container iframe {
+        height: 300px;
     }
 }
