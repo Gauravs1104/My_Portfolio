@@ -66,6 +66,36 @@ function Skills() {
             <div className="skill-level"></div>
           </div>
         </div>
+        <div className="skill-bar" data-skill="90">
+          <div className="skill-name">Java</div>
+          <div className="skill-level-container">
+            <div className="skill-level"></div>
+            </div>
+            </div>
+            <div className="skill-bar" data-skill="70">
+          <div className="skill-name">AI</div>
+          <div className="skill-level-container">
+            <div className="skill-level"></div>
+            </div>
+            </div>
+            <div className="skill-bar" data-skill="90">
+          <div className="skill-name">DBMS</div>
+          <div className="skill-level-container">
+            <div className="skill-level"></div>
+            </div>
+            </div>
+            <div className="skill-bar" data-skill="75">
+          <div className="skill-name">My Sql</div>
+          <div className="skill-level-container">
+            <div className="skill-level"></div>
+            </div>
+            </div>
+            <div className="skill-bar" data-skill="90">
+          <div className="skill-name">Software Engineering</div>
+          <div className="skill-level-container">
+            <div className="skill-level"></div>
+            </div>
+            </div>
       </div>
     </section>
   );
