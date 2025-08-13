@@ -167,8 +167,16 @@ main hr {
 }
 
 .service-box h2, .project-card h2 {
-    font-size: 1.5rem; /* Use rem for font size */
-    margin-bottom: 0.625rem; /* Use rem for margin */
+    font-size: 1.6rem; /* Slightly larger font size */
+    font-weight: 600; /* Bolder font weight */
+    margin-bottom: 0.8rem;
+    color: #9c97f1; /* A different color to stand out */
+}
+
+.project-card p {
+    font-size: 0.95rem; /* Slightly smaller font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #ccc; /* A slightly lighter color */
 }
 
 #contact-form {
